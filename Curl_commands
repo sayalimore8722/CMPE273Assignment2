@@ -1,0 +1,34 @@
+***********************************************************Menu***********************************************************
+//Post
+
+curl -H "Content-Type: application/json" -X POST -d '{"menuid": "3","store_name": "Pieology","selection": ["Cheese","Pepperoni"],"size": ["Slide", "Small", "Medium", "Large", "X-Large"],"price": ["3.50", "7.00", "10.00", "15.00", "20.00"],"store_hours": {"Mon": "10am-10pm","Tue": "10am-10pm","Wed": "10am-10pm","Thu": "10am-10pm","Fri": "10am-10pm","Sat": "11am-12pm","Sun": "11am-12pm"}}' https://r5j3xggtq8.execute-api.us-west-2.amazonaws.com/test/menu
+
+//GET
+
+curl -X GET -H "Content-type: application/json" -H "Accept:ication/json" https://r5j3xggtq8.execute-api.us-west-2.amazonaws.com/test/menu/1
+
+//PUT
+
+curl -H "Conte": ["Cheese","Pepperoni","Vegetable"]}'  https://r5j3xggtq8.execute-api.us-west-2.amazonaws.com/test/menu/3
+
+//DELETE
+
+curl -X DELETE -H "Content-type: application/json" -H "pplication/json" https://r5j3xggtq8.execute-api.us-west-2.amazonaws.com/test/menu/3
+
+*****************************************************Order*****************************************************************************
+
+//Post
+
+curl -H "Content-Type: application/json" -X POST -d '{   "menuid": "1","orderid": "1","customer_name": "John Smith","customer_email": "foobar@gmail.com"}' https://r5j3xggtq8.execute-api.us-west-2.amazonaws.com/test/order 
+
+//Put
+
+curl -H "Content-type: application/json" -X PUT -d '{"input":"1"}' https://r5j3xggtq8.execute-api.us-west-2.amazonaws.com/test/order/2bcfcac2-39ff-11e7-8b7b-368c1106e04c
+
+//Put
+
+curl -H "Content-type: application/json" -X PUT -d '{"input":"1"}' https://r5j3xggtq8.execute-api.us-west-2.amazonaws.com/test/order/2bcfcac2-39ff-11e7-8b7b-368c1106e04c
+
+//Get
+
+curl -X GET -H "Content-type: application/json" -H "Accept:application/json" https://r5j3xggtq8.execute-api.us-west-2.amazonaws.com/test/order/2bcfcac2-39ff-11e7-8b7b-368c1106e04c
